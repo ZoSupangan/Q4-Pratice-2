@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q4 Practice2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
     <h1>Switch Statement</h1>
 
+    <button class="btn btn-info" onclick="teamRank()">Rank</button>
+
     <script>
+        function teamRank(){
+            var rank = "1st";
+
+            var message = "";
+
+            switch(true){
+                case(rank === "1st"):
+                        message = "Champions!";
+                        break;
+                case(rank === "2nd"):
+                        message = "Second Placer!";
+                        break;
+                case(rank === "3rd"):
+                        message = "Third Placer!";
+                        break;
+                case(rank === "4th"):
+                        message = "Fourth Placer!";
+                        break;
+                    default:
+                        message = "Rank cannot be determined.";
+            }
+            alert(message);
+
+        }
+
+
+
+
+
         let team = "Green";//string
 
         switch(team){
